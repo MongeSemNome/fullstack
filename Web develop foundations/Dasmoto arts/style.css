@@ -9,9 +9,10 @@ header {
     text-align: center;
 }
 
-body{
+body {
 
 }
+
 main {
     font-family: Helvetica;
     font-size: 32px;
@@ -20,14 +21,18 @@ main {
 
 }
 
-h2.brush {
+.brush {
     background-color: mediumspringgreen;
 }
 
-h2.frame {
+.frame {
     background-color: lightcoral;
 }
 
-h2.paint {
+.paint {
     background-color: skyblue;
+}
+
+#price {
+    color: blue;
 }
