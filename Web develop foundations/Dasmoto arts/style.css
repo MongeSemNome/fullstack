@@ -25,10 +25,18 @@ h2 {
     font-size: 32px;
     font-weight: bold;
     color: white;
-
+    margin: 30px auto;
 }
 
+h3 {
+    display: inline-block;
+}
 
+img {
+    align-self: auto;
+    display: block;
+    padding: 10px;
+}
 .brush {
     background-color: mediumspringgreen;
 }
