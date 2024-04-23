@@ -6,20 +6,28 @@ header {
     font-size: 100px;
     font-weight: bold;
     color: khaki;
+    top: 20px;
+    text-size-adjust: initial ;
     text-align: center;
+    height: 150px;
 }
 
 body {
-
+    font-family: Helvetica;
+    margin: 20px auto;
+    padding: 10px auto;
+    width: 90%;
+    background-color:cadetblue;
 }
 
-main {
+h2 {
     font-family: Helvetica;
     font-size: 32px;
     font-weight: bold;
     color: white;
 
 }
+
 
 .brush {
     background-color: mediumspringgreen;
@@ -35,4 +43,5 @@ main {
 
 #price {
     color: blue;
+    font-weight: bold;
 }
