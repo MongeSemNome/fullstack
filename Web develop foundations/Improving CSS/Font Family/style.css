@@ -1,4 +1,11 @@
 
+@font-face {
+    font-family: 'GlegooBanner';
+    src: url('../fonts/Glegoo-Regular.woff2') format('woff2'),
+    url('../fonts/Glegoo-Regular.woff') format('woff'), 
+    url('../fonts/Glegoo-Regular.ttf') format('truetype');
+  
+}
 /* Universal Styles */
 html {
     font-size: 16px;
@@ -17,6 +24,7 @@ html {
     font-family: Georgia;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
   }
   
   h2 {
@@ -33,7 +41,7 @@ html {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-  
+    text-align: justify;
   }
   
   
@@ -75,6 +83,10 @@ html {
     border-bottom: 1px solid #fff;
     color: #ffffff;
     font-weight: lighter;
+    font-family: 'GlegooBanner';
+    font-size: 20px;
+    word-spacing: 0.25em;
+    line-height: 1.4;
   }
   
   
@@ -119,7 +131,7 @@ html {
   }
   
   .space {
-    
+    font-family: 'Space Mono', monospace;
   }
   
   .bold {
