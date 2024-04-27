@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Croissant One';
+  src: url(./styles/fonts/CroissantOne-Regular.ttf) format('truetype');
+}
+
 html {
     font-size: 18px;
   }
   
+
   @media only screen and (max-width: 1000px) {
     html {
       font-size: 16px;
@@ -73,6 +79,7 @@ html {
     border-top: 4px solid #ffb78c;
     border-bottom: 4px solid #ffb78c;
     font-size: 1.44rem;
+    font-family: "Work Sans", Arial, sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
   }
@@ -81,6 +88,7 @@ html {
     padding-top: 1.11rem;
     font-size: 11rem;
     font-weight: 900;
+    font-family: "Abril Fatface", sans-serif;
   }
   
   @media only screen and (max-width: 750px) {
@@ -109,6 +117,8 @@ html {
     padding: 0 25% 4rem 25%;
     background-color: rgb(254, 231, 218);
     color: #4a4a4a;
+    font-family: 'Work Sans', serif;
+
   }
   
   .photo {
@@ -130,6 +140,8 @@ html {
   
   .photo .caption {
     font-style: italic;
+    font-family: 'Merriweather', serif;
+    
   }
   
   .photo.first {
@@ -178,6 +190,7 @@ html {
     align-items: center;
     padding: 0 1%;
     background-color: #212121;
+    font-family: 'Croissant One', Merriweather, serif;
   }
   
   footer .image-container {
