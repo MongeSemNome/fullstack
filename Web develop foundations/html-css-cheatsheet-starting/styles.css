@@ -13,11 +13,11 @@ table {
     Font-family: Garamond, Arial, sans-serif;
     border: 2px solid black;
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     align-content: center;
     /* width é essencial para o posicionamento relativo de uma table */
-    width: 50%;
+    width: 30%;
 }
 
 thead, tfoot {
