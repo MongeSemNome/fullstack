@@ -4,7 +4,19 @@ a {
     cursor:pointer;
 }
 
+a:active, .question-link:active {
+    color: #DBE9EE;
+}
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+a:visited {
+    color: #466995;
+}
+
+
+.question-link:visited {
+    color: #ffffff;
 }
