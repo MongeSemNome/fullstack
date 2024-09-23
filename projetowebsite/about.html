@@ -1,0 +1,350 @@
+<html><head><base href="https://example.com/about">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - MyWebsite</title>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Custom CSS -->
+<style>
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?office');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #e9ecef;
+  }
+  .timeline > li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li .timeline-panel {
+    float: left;
+    position: relative;
+    width: 46%;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  }
+  .timeline > li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #e9ecef;
+    border-right: 0 solid #e9ecef;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+  .timeline > li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+  .timeline > li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #0d6efd;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 10px;
+    margin-top: 12px;
+    line-height: 14px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+</style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <h1 class="display-4 mb-4">About MyWebsite</h1>
+      <p class="lead">Discover our journey, values, and the team behind our success</p>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="mb-4">Our Story</h2>
+          <p>Founded in 2010, MyWebsite has been at the forefront of digital innovation for over a decade. Our journey began with a simple mission: to help businesses thrive in the digital age by providing cutting-edge web solutions.</p>
+          <p>Today, we're proud to be a leading force in web development, mobile app creation, and digital marketing. Our team of passionate experts works tirelessly to turn our clients' visions into reality, always pushing the boundaries of what's possible in the digital realm.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://source.unsplash.com/random/600x400/?team" alt="Our team collaborating in the office" class="img-fluid rounded" width="600" height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Values</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-lightbulb fa-3x mb-3 text-primary"></i>
+              <h3 class="card-title">Innovation</h3>
+              <p class="card-text">We constantly explore new technologies and methodologies to deliver cutting-edge solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+              <h3 class="card-title">Collaboration</h3>
+              <p class="card-text">We believe in the power of teamwork, both within our company and with our clients.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-trophy fa-3x mb-3 text-primary"></i>
+              <h3 class="card-title">Excellence</h3>
+              <p class="card-text">We strive for excellence in everything we do, ensuring top-quality results for our clients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey Timeline -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Journey</h2>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-image">
+            <h4>2010</h4>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Our Humble Beginnings</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">MyWebsite was founded with a vision to revolutionize web development.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <h4>2013</h4>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Expansion into Mobile</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">We launched our mobile app development services to meet growing demand.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <h4>2016</h4>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Digital Marketing Integration</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">We added comprehensive digital marketing services to our portfolio.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <h4>2020</h4>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Global Expansion</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">We opened offices in multiple countries, serving clients worldwide.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <h4>Now</h4>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Continuing Innovation</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">We continue to push boundaries and shape the future of digital experiences.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Meet Our Leadership Team</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center">
+            <img src="https://source.unsplash.com/random/300x300/?ceo" class="card-img-top" alt="CEO portrait" width="300" height="300">
+            <div class="card-body">
+              <h5 class="card-title">John Smith</h5>
+              <p class="card-text">CEO & Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center">
+            <img src="https://source.unsplash.com/random/300x300/?cto" class="card-img-top" alt="CTO portrait" width="300" height="300">
+            <div class="card-body">
+              <h5 class="card-title">Emily Johnson</h5>
+              <p class="card-text">CTO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center">
+            <img src="https://source.unsplash.com/random/300x300/?cmo" class="card-img-top" alt="CMO portrait" width="300" height="300">
+            <div class="card-body">
+              <h5 class="card-title">Michael Lee</h5>
+              <p class="card-text">CMO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>MyWebsite</h5>
+          <p>Your trusted partner in digital solutions.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/" class="text-white">Home</a></li>
+            <li><a href="/about" class="text-white">About</a></li>
+            <li><a href="/services" class="text-white">Services</a></li>
+            <li><a href="/contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Connect With Us</h5>
+          <div class="d-flex">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4">
+      <div class="text-center">
+        <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
