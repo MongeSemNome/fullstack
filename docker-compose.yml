@@ -1,0 +1,14 @@
+services:
+  backend:
+    image: felipesms/php8.1
+    ports:
+      - 5500:80
+    command: ["bash", "-c", "bash /home/sites/hostel/entrypoint.sh && tail -f /dev/null"]
+    volumes:
+      - ./:/home/sites/hostel
+      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./ports.conf:/etc/apache2/ports.conf
+      - ./envvars:/etc/apache2/envvars
+      - ./.bashrc:/root/.bashrc
+      # - ./php.ini:/usr/local/etc/php/php.ini
+    working_dir: /home/sites/hostel
