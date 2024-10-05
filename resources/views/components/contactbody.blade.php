@@ -1,11 +1,6 @@
 
     <!-- Hero Section -->
-    <div class="hero-section">
-      <div class="container text-center">
-        <h1 class="display-4">Entre em Contato!</h1>
-        <p class="lead">Teremos prazer em falar com você!</p>
-      </div>
-    </div>
+
 
     <!-- Main Content -->
     <div class="container my-5">
