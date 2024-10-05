@@ -8,8 +8,6 @@
 @include('components.getquote')
 @include('components.featuredserv')
 
-      <!-- CTA Section -->
 @include('components.getquote')
 @include('components.footer')
-
     </body>
