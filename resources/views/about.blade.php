@@ -1,3 +1,7 @@
+@include('components.style')
 @include('components.metadata')
-@include('components.navbar')
-@include('components.header')
+<body>
+@include('components.navbar', ['active' => 'Sobre Nós'])
+
+@include('components.getquote')
+</body>
