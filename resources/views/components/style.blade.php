@@ -8,7 +8,7 @@
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{asset('assets/img/books.jpeg')}}");
             background-size: cover;
             background-position: center;
-            height: 100vh;
+            height: 60%;
             display: flex;
             align-items: center;
             justify-content: center;
